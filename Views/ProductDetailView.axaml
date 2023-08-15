@@ -1,0 +1,39 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:Products.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Products.Views.ProductDetailView"
+             x:DataType="vm:ProductDetailViewModel">
+    <UserControl.DataContext>
+        <vm:ProductDetailViewModel/>
+    </UserControl.DataContext>
+    <StackPanel>
+        <TextBlock Text="Detaljer" FontSize="20" FontWeight="Bold" Margin="10"/>
+        
+        <Label Content="Produkt Navn:"/>
+        <TextBox Text="{Binding Product.Name}"/>
+        
+        <Label Content="Produkt Beskrivelse:"/>
+        <TextBox Text="{Binding Product.Description}"/>
+        
+        <Label Content="Produkt Salgspris:"/>
+        <TextBox Text="{Binding Product.SalesPrice}"/>
+        
+        <Label Content="Produkt Indkøbspris:"/>
+        <TextBox Text="{Binding Product.PurchasePrice}"/>
+        
+        <Label Content="Produkt Lagerbeholdning:"/>
+        <TextBox Text="{Binding Product.Stock}"/>
+        
+        <Label Content="Produkt Lagerenhed:"/>
+        <ComboBox ItemsSource="{Binding StockUnits}" SelectedItem="{Binding Product.StockUnit}"/>
+        
+        <Label Content="Skjult?"></Label>
+        <CheckBox IsChecked="{Binding Product.IsHidden}"/>
+        
+        <Button Name="SaveButton" Content="Gem" Click="OnSaveButtonClick"/>
+        <Button Content="Annuller" Click="OnCancelButtonClick"/>
+    </StackPanel>
+</UserControl>

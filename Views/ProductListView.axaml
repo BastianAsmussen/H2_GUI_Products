@@ -1,0 +1,40 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:Products.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:models="clr-namespace:Products.Models"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Products.Views.ProductListView"
+             x:DataType="vm:ProductListViewModel">
+    <UserControl.DataContext>
+        <vm:ProductListViewModel/>
+    </UserControl.DataContext>
+    
+    <StackPanel>
+        <TextBlock Text="Produkter" FontSize="20" FontWeight="Bold" Margin="10"/>
+        <ListBox ItemsSource="{Binding FilteredProducts}" SelectionChanged="OnSelectionChanged">
+            <ListBox.Template>
+                <ControlTemplate>
+                    <DockPanel LastChildFill="True">
+                        <Grid DockPanel.Dock="Top" ColumnDefinitions="*,*,*" Height="30">
+                            <Label Grid.Column="0">Navn</Label>
+                            <Label Grid.Column="1">Salgspris</Label>
+                            <Label Grid.Column="2">Indkøbspris</Label>
+                        </Grid>
+                        <ItemsPresenter/>
+                    </DockPanel>
+                </ControlTemplate>
+            </ListBox.Template>
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="models:Product">
+                    <Grid ColumnDefinitions="*,*,*">
+                        <TextBlock Grid.Column="0" Text="{Binding Name}"/>
+                        <TextBlock Grid.Column="1" Text="{Binding SalesPrice}"/>
+                        <TextBlock Grid.Column="2" Text="{Binding PurchasePrice}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
+</UserControl>
