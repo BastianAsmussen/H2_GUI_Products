@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\basti\\RiderProjects\\Products\\Products.csproj": {}
+    "C:\\Users\\Bastian\\RiderProjects\\H2_GUI_Products\\Products.csproj": {}
   },
   "projects": {
-    "C:\\Users\\basti\\RiderProjects\\Products\\Products.csproj": {
+    "C:\\Users\\Bastian\\RiderProjects\\H2_GUI_Products\\Products.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\basti\\RiderProjects\\Products\\Products.csproj",
+        "projectUniqueName": "C:\\Users\\Bastian\\RiderProjects\\H2_GUI_Products\\Products.csproj",
         "projectName": "Products",
-        "projectPath": "C:\\Users\\basti\\RiderProjects\\Products\\Products.csproj",
-        "packagesPath": "C:\\Users\\basti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\basti\\RiderProjects\\Products\\obj\\",
+        "projectPath": "C:\\Users\\Bastian\\RiderProjects\\H2_GUI_Products\\Products.csproj",
+        "packagesPath": "C:\\Users\\Bastian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bastian\\RiderProjects\\H2_GUI_Products\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\basti\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Bastian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -79,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
         }
       }
     }

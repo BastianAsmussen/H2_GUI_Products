@@ -13,16 +13,16 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Products
-build_property.ProjectDir = C:\Users\basti\RiderProjects\Products\
+build_property.ProjectDir = C:\Users\Bastian\RiderProjects\H2_GUI_Products\
 
-[C:/Users/basti/RiderProjects/Products/App.axaml]
+[C:/Users/Bastian/RiderProjects/H2_GUI_Products/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/basti/RiderProjects/Products/Views/MainWindow.axaml]
+[C:/Users/Bastian/RiderProjects/H2_GUI_Products/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/basti/RiderProjects/Products/Views/ProductDetailView.axaml]
+[C:/Users/Bastian/RiderProjects/H2_GUI_Products/Views/ProductDetailView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/basti/RiderProjects/Products/Views/ProductListView.axaml]
+[C:/Users/Bastian/RiderProjects/H2_GUI_Products/Views/ProductListView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
